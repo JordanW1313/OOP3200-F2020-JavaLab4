@@ -28,7 +28,7 @@ public class SalariedEmployee extends Employee
         }
         else
         {
-            throw new IllegalArgumentException("Yearly salary can not beb a negative number.");
+            throw new IllegalArgumentException("Yearly salary can not be a negative number.");
         }
 
     }

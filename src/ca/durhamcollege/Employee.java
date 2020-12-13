@@ -10,7 +10,7 @@ public abstract class Employee extends Person {
     public Employee(String id, String fullName, LocalDate birthDate) {
         super(fullName, birthDate);
         if (id.length() != 8) {
-            throw new IllegalArgumentException("Length error");
+            throw new IllegalArgumentException("Employee ID can not be greater or less than 8 characters.");
         } else {
             ID = id;
 

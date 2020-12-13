@@ -12,6 +12,8 @@ public class HourlyWorker extends Employee
     public HourlyWorker(String id, String fullName, LocalDate birthDate, double rate, double hours)
     {
         super(id, fullName, birthDate);
+        setHourlyRate(rate);
+        setWeeklyHours(hours);
     }
 
     // MUTATORS AND ACCESSORS
@@ -22,7 +24,7 @@ public class HourlyWorker extends Employee
 
     public void setHourlyRate(double hourlyRate)
     {
-        if(hourlyRate > 17)
+        if(hourlyRate >= 17)
         {
             this.hourlyRate = hourlyRate;
         }
